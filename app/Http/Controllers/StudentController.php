@@ -61,8 +61,16 @@ echo "</pre>";
              $students->tel_no             = $request->input('tel_no');
              $students->parent_occupation  = $request->input('parent_occupation');
              $students->save();
+              return Redirect::to('/allstudent')->with('message',$users->name. 'Record Created Successfully.');
     }
+
+    public function registered()
+    {
+        $students = Student::all();
+        return view('student.allstudent')->with('students',$students);
+    }
+
     
    
-}
+}           
 

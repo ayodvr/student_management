@@ -9,6 +9,7 @@
 
 <!-- ADD STUDENTS DATA Modal -->
 <div class="modal fade" id="studentaddmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -193,18 +194,7 @@
     </div>
   </div>
 </div>
-<div class="container">
-	<div class="jumbotron">
-		
-<div class="row">
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#studentaddmodal">
-  Launch demo modal
-</button>
 
-		</div>
-	</div>
-	
-</div>
 
 @endsection
 

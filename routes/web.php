@@ -38,5 +38,8 @@ Route::group(['middleware'=>['auth','admin']],function(){
     });
     Route::get('/studentform','StudentController@index');
 Route::post('/studentadd','StudentController@store');
+Route::get('/allstudent','StudentController@registered');
+Route::get('students', 'StudentController@indexs');
+Route::get('/activestudent', 'StudentController@changeStatus');
 });
 
