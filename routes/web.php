@@ -43,5 +43,5 @@ Route::get('students', 'StudentController@indexs');
 Route::get('/activestudent', 'StudentController@changeStatus');
 });
 
-
+Route::resource('/course','CourseController');
 Route::resource('enquiry', 'EnquiryController');
