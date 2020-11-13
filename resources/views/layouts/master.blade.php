@@ -389,13 +389,13 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
                             <li>
-                                <a href="element_alerts.html"> Create New </a>
+                                <a href="/staff/create"> Create New </a>
                             </li>
                             <li>
-                                <a href="element_avatar.html"> Staff List </a>
+                                <a href="/staff"> Staff List </a>
                             </li>
                             <li>
-                                <a href="element_badges.html"> Attrited Staff </a>
+                                <a href="/attrited"> Attrited Staff </a>
                             </li>
                            
                         </ul>
