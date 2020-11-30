@@ -36,10 +36,10 @@ Route::group(['middleware'=>['auth','admin']],function(){
     Route::get('/dashboard',function(){
         return view('admin.dashboard');
     });
-    Route::get('/studentform','StudentController@index');
+Route::get('/studentform','StudentController@index');
 Route::post('/studentadd','StudentController@store');
 Route::get('/allstudent','StudentController@registered');
-Route::get('students', 'StudentController@indexs');
+Route::get('/viewstudent/{id}','StudentController@viewstudent');;
 Route::get('/activestudent', 'StudentController@changeStatus');
 });
 

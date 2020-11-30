@@ -61,7 +61,7 @@ echo "</pre>";
              $students->tel_no             = $request->input('tel_no');
              $students->parent_occupation  = $request->input('parent_occupation');
              $students->save();
-              return Redirect::to('/allstudent')->with('message',$users->name. 'Record Created Successfully.');
+              return Redirect::to('/allstudent')->with('message','Record Created Successfully.');
     }
 
     public function registered()
@@ -71,6 +71,19 @@ echo "</pre>";
     }
 
     
+
+    public function changeStatus()
+    {
+          $students = Student::all();
+        return view('student.activestudent')->with('students',$students);
+    }
+
+
+     public function viewstudent(Request $request,$id)
+    {
+      $students = User::findorFail($id);
+      return view('student.viewstudent')->with('students',$students);
+    }
    
 }           
 
