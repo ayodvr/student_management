@@ -43,5 +43,8 @@ Route::get('/viewstudent/{id}','StudentController@viewstudent');;
 Route::get('/activestudent', 'StudentController@changeStatus');
 });
 
-
+Route::resource('/course','CourseController');
 Route::resource('enquiry', 'EnquiryController');
+Route::resource('staff', "staffcontroller");
+Route::get('/attrited', 'attritedController@index');
+Route::get('/attrited/{id}', 'attritedController@restore');

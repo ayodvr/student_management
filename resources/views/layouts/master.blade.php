@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from designreset.com/cork/ltr/demo4/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Aug 2020 09:52:03 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,38 +7,28 @@
       <title>
         @yield('title')
  </title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
-    <script src="assets/js/loader.js"></script>
+    <link rel="icon" type="image/x-icon" href="{{asset('../../assets/img/favicon.ico')}}"/>
+    <link href="{{asset('../../assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
+    <script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')}}"></script>
+    <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')}}"></script>
+    <script src="{{asset('../../assets/js/loader.js')}}"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="{{asset('../../https://fonts.googleapis.com/css?family=Nunito:400,600,700')}}" rel="stylesheet">
+    <link href="{{asset('../../bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('../../assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/css/elements/miscellaneous.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/custom_dt_multiple_tables.css">
-    <!-- END PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{asset('plugins/table/datatable/datatables.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('plugins/table/datatable/custom_dt_multiple_tables.css')}}">
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
     <!-- CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-<!-- jQuery and JS bundle w/ Popper.js -->
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/custom_dt_multiple_tables.css">
-
-
-    <!-- END GLOBAL MANDATORY STYLES -->
     <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL STYLES -->
-    
+   
 </head>
 <body>
     <!-- BEGIN LOADER -->
@@ -327,14 +315,11 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="app" data-parent="#accordionExample">
                             <li>
-                                <a href="apps_chat.html"> Courses </a>
-                            </li>
-                            <li>
                                 <a href="apps_mailbox.html"> Trainings Schedules  </a>
                             </li>
                             <li>
                                 <a href="apps_todoList.html"> Trainings Records </a>
-                            </li>                            
+                            </li>                           
                         </ul>
                     </li>
 
@@ -393,40 +378,40 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
                             <li>
-                                <a href="element_alerts.html"> Create New </a>
+                                <a href="/staff/create"> Create New </a>
                             </li>
                             <li>
-                                <a href="element_avatar.html"> Staff List </a>
+                                <a href="/staff"> Staff List </a>
                             </li>
                             <li>
-                                <a href="element_badges.html"> Attrited Staff </a>
+                                <a href="/attrited"> Attrited Staff </a>
                             </li>
                            
                         </ul>
                     </li>
 
-
-                    <li class="menu">
-                        <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <li class="menu">
+                        <a href="#datatables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                                <span>Courses</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                <span>Course</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="datatables" data-parent="#accordionExample">
                             <li>
-                                <a href="element_alerts.html"> View Course </a>
+                                <a href="{{route('course.index')}}"> View Course </a>
                             </li>
                             <li>
-                                <a href="element_avatar.html"> Add Course </a>
+                                <a href="" data-toggle="modal" data-target="#courseModal"> Add Course </a>
                             </li>
-                           
-                           
                         </ul>
                     </li>
+
+
+                  
 
                     <li class="menu">
                         <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
@@ -446,53 +431,7 @@
                         </a>
                     </li>
 
-                    <li class="menu">
-                        <a href="#datatables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                                <span>DataTables</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="datatables" data-parent="#accordionExample">
-                            <li>
-                                <a href="table_dt_basic.html"> Basic </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_basic-dark.html"> Dark </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_ordering_sorting.html"> Order Sorting </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_multi-column_ordering.html"> Multi-Column </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_multiple_tables.html"> Multiple Tables</a>
-                            </li>
-                            <li>
-                                <a href="table_dt_alternative_pagination.html"> Alt. Pagination</a>
-                            </li>
-                            <li>
-                                <a href="table_dt_custom.html"> Custom </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_range_search.html"> Range Search </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_html5.html"> HTML5 Export </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_live_dom_ordering.html"> Live DOM ordering </a>
-                            </li>
-                            <li>
-                                <a href="table_dt_miscellaneous.html"> Miscellaneous </a>
-                            </li>
-                        </ul>
-                    </li>
-
+                 
                     <li class="menu">
                         <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
@@ -745,26 +684,39 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
 
-   
-   
-    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="bootstrap/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/app.js"></script>
-
+    <script src="{{asset('../../assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/popper.min.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/lga.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/lga.min.js')}}"></script>
+    <script src="{{asset('../../plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('../../assets/js/app.js')}}"></script>
+    <script src="{{asset('plugins/highlight/highlight.pack.js')}}"></script>
+    <script src="{{asset('assets/js/custom.js')}}"></script> 
+    <script src="{{asset('assets/js/scrollspyNav.js')}}"></script>
     <script>
         $(document).ready(function() {
             App.init();
         });
-    </script>
-    <script src="{{asset('../../assets/js/custom.js')}}"></script>
-    <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="plugins/highlight/highlight.pack.js"></script>
-   
-    <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="assets/js/scrollspyNav.js"></script>
-      <script>
+    </script> 
+    <script src="{{asset('plugins/table/datatable/datatables.js')}}"></script>
+    <script>        
+        $('#default-ordering').DataTable( {
+            "oLanguage": {
+                "oPaginate": { "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>', "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' },
+                "sInfo": "Showing page _PAGE_ of _PAGES_",
+                "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
+                "sSearchPlaceholder": "Search...",
+               "sLengthMenu": "Results :  _MENU_",
+            },
+            "order": [[ 3, "desc" ]],
+            "stripeClasses": [],
+            "lengthMenu": [7, 10, 20, 50],
+            "pageLength": 7,
+            drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
+	    } );
+    </script> 
+     <script>
         $(document).ready(function() {
             $('table.multi-table').DataTable({
                 "oLanguage": {
@@ -782,19 +734,98 @@
                     $('.dataTables_wrapper table').removeClass('table-striped');
                 }
             });
-        } );
+        });
     </script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="plugins/apex/apexcharts.min.js"></script>
-    <script src="assets/js/dashboard/dash_1.js"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
     <script src="{{asset('../../plugins/apex/apexcharts.min.js')}}"></script>
     <script src="{{asset('../../assets/js/dashboard/dash_1.js')}}"></script>
 
-    <script src="{{asset('../../bootstrap/js/lga.js')}}"></script>
-    <script src="{{asset('../../bootstrap/js/lga.min.js')}}"></script>
-
-    <script src="{{asset('../../plugins/table/datatable/datatables.js')}}"></script>
+ <div id="courseModal" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+            <div class="modal-body">
+              <div class="text-center">
+                <div class="alert alert-success" style="display:none"></div>   
+                <div class="alert alert-danger" style="display:none">
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div> 
+              </div>
+              <div class="widget-header">                                
+                <div class="row">
+                    <div class="col-xl-12 col-md-12 col-sm-12 col-12 text-center">
+                        <h4>Add Course</h4>
+                    </div>
+                </div>
+            </div>
+              <div class="widget-content widget-content-area">
+                <form action="POST" id="cusModal">
+                    @csrf
+                    <div class="form-group mb-4">
+                        <label for="exampleFormControlInput2">Course</label>
+                        <input type="text" name="course_name" class="form-control" id="exampleFormControlInput2" placeholder="Course">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="exampleFormControlSelect1">Duration</label>
+                        <select name="duration" class="form-control" id="exampleFormControlSelect1">
+                            <option>Select Duration</option>
+                            <option value="2Months">2 Months</option>
+                            <option value="3Months">3 Months</option>
+                            <option value="6Months">6 Months</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="exampleFormControlSelect1">Description</label>
+                        <input type="text" name="description" class="form-control" id="exampleFormControlInput2" placeholder="Description">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="exampleFormControlSelect1">Price</label>
+                        <input type="number" name="price" class="form-control" id="exampleFormControlInput2" placeholder="Price">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="exampleFormControlSelect1">Slug</label>
+                        <input type="text" name="slug" class="form-control" id="exampleFormControlInput2" placeholder="Slug">
+                    </div>
+                    <input type="submit" name="time" class="mt-4 mb-4 btn btn-primary">
+                </form>
+            </div>
+              </div>
+           </div>
+          </div>
+        </div>
+<script>
+    // Ajax call for registering users
+    $(document).ready(function(){
+        $('#cusModal').on('submit',function(event){
+            event.preventDefault();
+            // $('.alert-danger').hide();
+            //  $('.alert-danger').html('');
+            $.ajax({
+                url: "{{ route('course.store')}}",
+                method: "post",
+                data:$('#cusModal').serialize(),
+                success:function(data){
+                  //console.log(result);
+                  $('#cusModal')[0].reset();
+                  $('.alert-success').show();
+                  $('.alert-success').html(data.success_info).delay(10000).fadeOut();
+                },
+                error: function (request, status, error) {
+                  json = $.parseJSON(request.responseText);
+                  $.each(json.errors, function(key, value){
+                      $('.alert-danger').show();
+                      $('.alert-danger').append('<h6>'+value+'</h6>').delay(10000).fadeOut();           
+                  });  
+               }
+            });
+        });
+    });
+  </script>
     <script>
         $(document).ready(function() {
             $('table.multi-table').DataTable({
@@ -1072,8 +1103,7 @@
 
 </script>
 @yield('scripts')
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    
 </body>
-
-<!-- Mirrored from designreset.com/cork/ltr/demo4/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Aug 2020 09:52:04 GMT -->
 </html>
+
