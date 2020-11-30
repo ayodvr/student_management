@@ -327,10 +327,7 @@
                             </li>
                             <li>
                                 <a href="apps_todoList.html"> Trainings Records </a>
-                            </li>   
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#courseModal"> Add Course </a>
-                            </li>                         
+                            </li>                           
                         </ul>
                     </li>
 
